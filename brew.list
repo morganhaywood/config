@@ -1,0 +1,13 @@
+bash
+go
+hashcat
+jq
+kakoune
+kubernetes-cli
+python
+ripgrep
+shellcheck
+tree
+yamllint
+zsh
+zsh-completions

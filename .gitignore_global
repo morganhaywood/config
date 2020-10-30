@@ -1,0 +1,14 @@
+# Folder view config files
+*.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# IntelliJ
+*.idea/
+
+# External disk stuff
+.Spotlight-V100
+.Trashes

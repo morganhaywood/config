@@ -1,0 +1,23 @@
+System preferences:
+- touch pad setting (inc. drag under accessibility)
+- display settings
+- dock settings
+- language settings (inc. input under keyboard)
+- touch bar settings (under keyboard)
+- desktop background
+
+Install:
+- chrome
+- slack
+- homebrew
+- 1Password (app + extension)
+
+App settings:
+- Chrome -> don't offer to save passwords etc
+- terminal -> login command (to zsh)
+
+Misc.:
+- chmod .ssh folder (700 for dir itself, 644 for public keys, 600 for everything else)
+- clone this repo and run setteisuru.sh
+- python tomfoolery
+- add/remove things from dock
