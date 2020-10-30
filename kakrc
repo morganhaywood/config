@@ -5,6 +5,9 @@ set global ui_options ncurses_assistant=cat
 set -add global ui_options ncurses_set_title=false
 set -add global ui_options ncurses_enable_mouse=false
 
+# colour
+colorscheme red-phoenix
+
 # indents
 set global indentwidth 4
 set global tabstop 4
@@ -12,6 +15,7 @@ set global scrolloff 10,1
 
 # user
 map global user = '<a-i>w:spell-replace<ret>' -docstring 'spell replace word'
+map global user ] ':spell-next<ret>' -docstring 'next spell error'
 map global user c ':comment-line<ret>' -docstring 'comment toggle selected lines'
 map global user l ':lint-next-error<ret>' -docstring 'next lint error'
 map global user L ':lint-previous-error<ret>' -docstring 'previous lint error'
@@ -57,4 +61,9 @@ hook global WinSetOption filetype=yaml %{
     set window lintcmd 'yamllint -f parsable'
     lint-enable
     hook buffer BufWritePost .* lint
+}
+
+## markdown
+hook global WinSetOption filetype=markdown %{
+    hook buffer BufWritePost .* spell
 }
