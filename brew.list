@@ -1,9 +1,9 @@
+aspell
 bash
 go
 hashcat
 jq
 kakoune
-kubernetes-cli
 python
 ripgrep
 shellcheck
