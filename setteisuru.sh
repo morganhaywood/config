@@ -6,6 +6,7 @@ ln -sf "$d"/.zshrc ~/.zshrc
 ln -sf "$d"/.gitconfig ~/.gitconfig
 ln -sf "$d"/.gitignore_global ~/.gitignore_global
 mkdir -p ~/.config/kak && cp kakrc ~/.config/kak/kakrc
+./aspell-config.sh
 
 while read -r util; do
   brew install "$util"
